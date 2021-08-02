@@ -3,7 +3,6 @@
 * http://brm.io/matter-js/
 * License MIT
 */
-
 /**
  * The MIT License (MIT)
  * 
@@ -38,11 +37,8 @@
 
 * @class Body
 */
-
-var Body = {};
-
+ var Body = {};
 module.exports = Body;
-
 var Vertices = _dereq_('../geometry/Vertices');
 var Vector = _dereq_('../geometry/Vector');
 var Sleeping = _dereq_('../core/Sleeping');
@@ -50,7 +46,6 @@ var Render = _dereq_('../render/Render');
 var Common = _dereq_('../core/Common');
 var Bounds = _dereq_('../geometry/Bounds');
 var Axes = _dereq_('../geometry/Axes');
-
 (function() {
 
     Body._inertiaScale = 4;
@@ -115,12 +110,9 @@ var Axes = _dereq_('../geometry/Axes');
                 lineWidth: 0
             }
         };
-
-        var body = Common.extend(defaults, options);
-
-        _initProperties(body, options);
-
-        return body;
+var body = Common.extend(defaults, options);
+_initProperties(body, options);
+  return body;
     };
 
     /**
